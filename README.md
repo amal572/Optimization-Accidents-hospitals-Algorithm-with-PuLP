@@ -68,6 +68,18 @@ Regarding the objective function, the total cost is determined by summing the va
 ## Results and Interpretation:
 The three optimal solution selection algorithms were tested on the four problems: ['GLPK_CMD', 'GUROBI', 'PULP_CBC_CMD']. The result was that they all yielded the same total cost. To simplify complexity and reduce solution time, the 'PULP_CBC_CMD' algorithm was selected as it provided similar results with less computational burden.
 
+| Total Total Cost | Issue |
+|-----------------------|---------|
+| 1- Go and return to the same hospital with congestion| 22352410.0|
+| 2- Go and return to the same hospital without congestion| 22736288.0|
+| 3-1 Go to a hospital with congestion| 11124259.0|
+| 3-2 The return is not necessarily to the same hospital with congestion| 10962408.0|
+| 3- The total of going and returning is not necessarily to the same hospital with congestion| 22086667.0|
+| 4-1 Going relative to a hospital without congestion| 11385344.0|
+| 4-2 The return is not necessarily to the same hospital without congestion| 11087340.0|
+| 4- The total of going and returning is not necessarily to the same hospital with congestion| 22472684.0|
+
+### Comparing the four issues, we find that the case of going to and returning from the same hospital is the most suitable scenario when an accident occurs. We observe that the difference is minor between the congested and non-congested scenarios.
 
 
 
